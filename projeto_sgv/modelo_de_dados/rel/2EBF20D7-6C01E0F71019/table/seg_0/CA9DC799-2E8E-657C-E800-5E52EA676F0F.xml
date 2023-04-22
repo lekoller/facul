@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CA9DC799-2E8E-657C-E800-5E52EA676F0F" name="T_SGV_PESSOA_JURIDICA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>EAD04362-3B65-CD78-8226-CBE2E2B30742</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="43CD380F-24F5-1424-15B9-CB38B16CAE14">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>9DD30F74-A331-7DAE-D8D7-CB20C5BE93BF</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="56BB8488-5E1C-7926-B19C-F585865FCC45" referredColumn="1D6FED50-BFEF-C2EB-3451-E496AA961A2E"/>
+</associations>
+</Column>
+<Column name="id_pj" id="EE490E9F-7741-4AC3-3A9E-08F61171CABB">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>C7683026-68A4-06BA-6E76-015679474DA8</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cnpj" id="94B251F6-07D9-3374-267E-AD6800D68A6F">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>51EDC067-20A8-CC4C-ADB1-2024C3C5090F</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>14</dataTypePrecision>
+<ownDataTypeParameters>,14,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_inscr_est" id="4E1FB4D8-2E18-D80E-4BB3-64E06F81A401">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>4E0CB5D3-25D3-80EC-31DD-C59C5EBA55A2</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>32</dataTypeSize>
+<ownDataTypeParameters>32,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_fundacao" id="8AB4926F-3B73-A2A8-AFD8-5F679E48D4FB">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>0264F40B-C000-A78D-C72A-D522BA6FCA51</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2A8203A1-20B4-20A5-09B3-73448633FD81" name="PK_SGV_PESSOA_JURIDICA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>F366798A-89FF-0048-D526-3C3DEAC9343B</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE490E9F-7741-4AC3-3A9E-08F61171CABB"/>
+<colUsage columnID="43CD380F-24F5-1424-15B9-CB38B16CAE14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="757A84AD-2A36-D829-6EAA-84DAEFCB6F16" name="T_SGV_PESSOA_JURIDICA__IDX">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>4543B3E7-3CCE-4F25-5949-E0E92D372755</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="43CD380F-24F5-1424-15B9-CB38B16CAE14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="760070F9-60B3-819C-ED7F-EBFC96BCE697" name="FK_SGV_PJ_CLIENTE">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>4543B3E7-3CCE-4F25-5949-E0E92D372755</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="43CD380F-24F5-1424-15B9-CB38B16CAE14"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

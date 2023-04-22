@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E5F2C347-24D4-3CF1-3577-03104382D1BD" name="T_SGV_VISUALIZACAO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:16:06 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_produto" id="4901F614-F49B-DDAE-DB1B-77CAFB80FCFE">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:18:03 UTC</createdTime>
+<generatorID>EADA9363-EC12-0F3A-FFF7-E623D0FD28E4</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>FA54314A-97AE-6513-301A-DCC378DAE6EE</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_video" id="389383BD-4771-57EB-B639-147FC9899566">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:18:03 UTC</createdTime>
+<generatorID>EADA9363-EC12-0F3A-FFF7-E623D0FD28E4</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>DC4F0FB6-2CBC-5AD6-F616-54A72C8A9732</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_visualizacao" id="1FC7B15C-6FFB-5F88-9294-E406D6F7A893">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:16:32 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cliente" id="C1B90A91-C6F4-760E-0853-38713C1FFC2A">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:19:22 UTC</createdTime>
+<generatorID>20DA93EF-7E1C-DF3E-82C7-4D474FE8B3A3</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>3BC3E673-5B9E-003A-36DB-90E803C67F86</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_visualizacao" id="45116C8A-A349-714B-5569-128239604815">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:17:04 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E171D58D-CCAC-F43C-F5F7-777BAA0C3E48" name="T_SGV_VISUALIZACAO PK">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:16:55 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>1FC7B15C-6FFB-5F88-9294-E406D6F7A893</attributeRef>
+<attributeRef>389383BD-4771-57EB-B639-147FC9899566</attributeRef>
+<attributeRef>4901F614-F49B-DDAE-DB1B-77CAFB80FCFE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

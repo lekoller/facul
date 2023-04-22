@@ -1,0 +1,134 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="95667875-C9A0-CBA7-4E73-944F4C717CE4" name="T_SGV_PESSOA_FISICA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>EC2DB049-9A04-DB4D-7FE8-860E7247CD5D</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<ordsAlias>t_svg_pessoa_fisica</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="CF111244-2A17-A532-A814-E8955F7260F3">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>386E9029-57DA-61F0-D6CA-210187C11B55</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="99B2485C-820A-43BC-60DF-D1CC3369C32F" referredColumn="1D6FED50-BFEF-C2EB-3451-E496AA961A2E"/>
+</associations>
+</Column>
+<Column name="id_pf" id="6937F4E4-5348-8017-61F2-6A3C66308CD6">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>F061C3DA-06CD-5EA7-6FFC-B1D31B4C20E3</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_cpf" id="0DFA88A3-1F51-F181-DC93-F5A7F41981DB">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>BC4D334B-F91A-78DE-D6B0-3F7B58947216</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_nascimento" id="32CEE5CC-6DBF-CF76-7CB7-A78A75C1FC15">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>5C2CBDF7-DE53-9A99-51E9-9E8383A86EE5</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_sexo" id="47C2C7D2-87BF-6B5C-30F1-584E05E425D9">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Sexo biolõgico do cliente pessoa fĩsica.</commentInRDBMS>
+<generatorID>BA6C49FD-98CC-F162-0164-EB1DD737B90B</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_genero" id="F532ACCA-8FFA-FA3B-54BB-824C1C924E55">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Genero do cliente pessoa fisica</commentInRDBMS>
+<generatorID>12AA87BD-6DFF-0969-AAD5-6C90AF763006</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D92AE550-1629-401F-95F4-0120FE55F61F" name="PK_SGV_PESSOA_FISICA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>54622F96-BC3C-8DFF-5903-9CD1CAE6C07B</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6937F4E4-5348-8017-61F2-6A3C66308CD6"/>
+<colUsage columnID="CF111244-2A17-A532-A814-E8955F7260F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7D79DD2A-2A19-4C65-4201-D4F22CAB1245" name="T_SGV_PESSOA_FISICA__IDX">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>50824CA3-F3CA-4FAD-CB10-71F7B3FD0A1F</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="CF111244-2A17-A532-A814-E8955F7260F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6DDFD807-A9AF-5B9D-9F49-B0466C2D7A2E" name="FK_SGV_PF_CLIENTE">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>50824CA3-F3CA-4FAD-CB10-71F7B3FD0A1F</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CF111244-2A17-A532-A814-E8955F7260F3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SGV_PF_SEXO" directorySegmentName="seg_0" id="E10AB6CA-778D-E87E-7F12-23120DA8A9C1">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:23:39 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<rule>CD_SEXO == M || CD_SEXO == F</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

@@ -1,0 +1,124 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D6395F62-480D-8A2B-B592-3CF87DC86E6D" name="T_SGV_VIDEO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>1EC2E704-5CC0-0352-5D5A-62198F12841C</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_produto" id="08EEFD64-100D-D90A-5C46-DFB8F8E0A30A">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>FA54314A-97AE-6513-301A-DCC378DAE6EE</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C345029D-DD9B-E774-954A-9A0DDDEC8C84" referredColumn="7ADC1748-79EB-8624-1167-B95430A6C050"/>
+</associations>
+</Column>
+<Column name="id_video" id="47D29F5C-0878-F10A-2866-EF1B8DA45677">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>DC4F0FB6-2CBC-5AD6-F616-54A72C8A9732</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_classificacao" id="9C100963-FB6B-D60B-1099-8E92E1910A25">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>65C4DA94-BD32-B8EC-B560-37030C2CEAAE</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="654BE954-5C3F-B5C7-20F9-04EA662A72C0" referredColumn="93DAE622-513F-59EA-A229-336AC756DA44"/>
+</associations>
+</Column>
+<Column name="st_video" id="5827F408-BD62-63F3-C60D-80A3AC0E290F">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Status que identifica o video como ativo ou inativo.</commentInRDBMS>
+<generatorID>71E97DDD-0188-51EE-B18E-C86E07203924</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_video" id="2C1522F9-0ED1-5376-1C75-576E9B77279E">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Conteudo do video.</commentInRDBMS>
+<generatorID>FAA724B4-7AA2-D5B3-4872-B081395101D5</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT016</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="98B72706-0999-2EF1-9164-5F854BCB25B3" name="PK_SGV_VIDEO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>5EF8F1CE-7435-2DC4-DB39-4228B1101116</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="47D29F5C-0878-F10A-2866-EF1B8DA45677"/>
+<colUsage columnID="08EEFD64-100D-D90A-5C46-DFB8F8E0A30A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="235A1BBD-365B-B2CF-C581-CAE41E737DE4" name="FK_SGV_VIDEO_PROD">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>5AC1AFDE-A991-0780-D139-1ECE4F4E104C</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08EEFD64-100D-D90A-5C46-DFB8F8E0A30A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0A112E30-B944-786A-859E-1FEFB9CC6544" name="FK_SGV_VIDEO_CLASS">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>AC85DAAB-6A36-FE20-45EF-361A684236CF</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C100963-FB6B-D60B-1099-8E92E1910A25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SGV_VIDEO_ST" directorySegmentName="seg_0" id="3665DCDE-C962-4F49-496B-342550979683">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 18:54:40 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<rule>ST_VIDEO == A || ST_VIDEO == I</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

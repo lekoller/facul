@@ -1,0 +1,106 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F83965D4-691B-8F7F-AE70-32098549D132" name="T_SGV_CATEGORIA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>9186EB50-1D03-39D7-3277-8C8A21BDA412</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_categoria" id="CDE63348-60FD-43C4-DB8C-B39619BF96A3">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>BD594632-5A5F-E3CA-79C5-9DB87E231AE7</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_categoria" id="2103120B-8690-8B7C-7B24-3B909B7865FE">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<comment>Fazer uma UNIQUE constraint.</comment>
+<commentInRDBMS>Descricao da categoria.</commentInRDBMS>
+<generatorID>6C4732AF-D2C0-A02E-CFB9-7AE3BF72D910</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_categoria" id="56D82B71-8CED-9026-1357-1E81ADD39617">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>019EA68C-CA6E-6CAB-ACE9-1DD46DABE2FF</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_inicio" id="5FF74842-FA7B-801C-EE32-1BD185A13DED">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Data de inicio da categoria.</commentInRDBMS>
+<generatorID>1D5C91A6-A8E7-386F-BF27-C22F65FA3A0C</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_termino" id="59A9F7A8-32CC-9ADA-C276-14701B8C2871">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Data do termino da categoria.</commentInRDBMS>
+<generatorID>8110508E-6900-B36A-A5FB-E0315537215D</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1D96ADBB-3FA9-79B8-A2C3-F91D9210A6FC" name="PK_SGV_CATEGORIA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>FFE01863-20A3-87DA-546C-DD379679D4CD</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CDE63348-60FD-43C4-DB8C-B39619BF96A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0798F797-BE6A-C0AD-D7AA-CB7411DB30DF" name="UN_SGV_CATEGORIA_DESC">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 18:55:41 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2103120B-8690-8B7C-7B24-3B909B7865FE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SGV_CATEGORIA_ST" directorySegmentName="seg_0" id="C3FDF358-3344-CE67-8FAD-90BF66B3CCE8">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:29:54 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<rule>ST_CATEGORIA == A || ST_CATEGORIA == I</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

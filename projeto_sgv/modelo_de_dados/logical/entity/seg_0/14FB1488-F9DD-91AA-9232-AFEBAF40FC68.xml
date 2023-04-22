@@ -1,0 +1,194 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="14FB1488-F9DD-91AA-9232-AFEBAF40FC68" name="T_SGV_CHAMADO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:20:44 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="122FF54A-B409-6F3C-32D7-6DC14878B499">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:26:42 UTC</createdTime>
+<generatorID>4E5D7AB1-AFC1-8399-11E5-50403F93DE72</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>3BC3E673-5B9E-003A-36DB-90E803C67F86</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_produto" id="9C07735F-8C82-E3F6-F9BF-E335C452C6F0">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:26:23 UTC</createdTime>
+<generatorID>3D76E0D7-E56E-068F-5652-AC953E6A5183</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>B360A3D2-057A-2555-ABAA-AD19BDC2B180</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_chamado" id="335A0281-74F5-0691-224D-89D0B4A50901">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:21:04 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_funcionario" id="F4E3CBEB-A980-9916-2524-A5557C0AB32C">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:27:13 UTC</createdTime>
+<generatorID>27FB9BE4-2542-418B-EB12-91B0107BAABC</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>FEAE879D-A5E0-03D9-78DB-84B43CC68F18</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_tipo" id="1BED4A76-44D5-7C70-C933-9F47B988E244">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:21:44 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_chamado" id="8E22156C-CA7E-98F0-6A64-EFE09C32B4D5">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:22:17 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tx_chamado" id="DB2479AC-903F-B3C0-30A6-9181E5486A4E">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:22:36 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_abertura" id="EBB09630-C9CD-485C-1013-FB78D5C1DF3F">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:23:02 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_atendimento" id="99899618-A5C9-BCAA-2EBB-5492C4FF7B78">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:30:43 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_fechamento" id="B7485F9A-2907-C054-6214-C1F84F584E77">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:24:05 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_satisfacao" id="3198DD80-D1A7-CB2B-43C6-8666E4DD09F4">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:24:55 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_duracao_h" id="EBC019B1-7CF5-9D5B-4E03-483CF84CF956">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:36:41 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="920936A9-569C-02D4-DF9B-95C3B252FD9E" name="T_SGV_CHAMADO PK">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:21:43 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>335A0281-74F5-0691-224D-89D0B4A50901</attributeRef>
+<attributeRef>9C07735F-8C82-E3F6-F9BF-E335C452C6F0</attributeRef>
+<attributeRef>122FF54A-B409-6F3C-32D7-6DC14878B499</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

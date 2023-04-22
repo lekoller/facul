@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D14A38B9-0E3B-B9BF-A553-EE7CDC7EF219" containerWithKeyObject="88D91310-9B4E-E46F-E50C-67D0DBC01BFA" localFKIndex="C19E7C0B-7B93-9AD3-74C0-8980E9501AA1" name="FK_SGV_CHAM_FUNC">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>27FB9BE4-2542-418B-EB12-91B0107BAABC</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<referredTableLongName>T_SGV_FUNCIONARIO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>555149AA-09F3-A1B4-45CA-2A6962FE2B5E</referredTableID>
+<keyObject>2D54D690-B80B-DF11-AECF-9FC8BF8BEF13</keyObject>
+<referredKeyID>2D54D690-B80B-DF11-AECF-9FC8BF8BEF13</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>cd_funcionario</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="1EC2E704-5CC0-0352-5D5A-62198F12841C" name="T_SGV_VIDEO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 20:36:53 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_produto" id="FA54314A-97AE-6513-301A-DCC378DAE6EE">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 20:45:34 UTC</createdTime>
+<generatorID>5AC1AFDE-A991-0780-D139-1ECE4F4E104C</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>B360A3D2-057A-2555-ABAA-AD19BDC2B180</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_video" id="DC4F0FB6-2CBC-5AD6-F616-54A72C8A9732">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 20:37:19 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_classificacao" id="65C4DA94-BD32-B8EC-B560-37030C2CEAAE">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 23:28:39 UTC</createdTime>
+<generatorID>AC85DAAB-6A36-FE20-45EF-361A684236CF</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>4153DBB7-1A71-60BB-C100-8968248FDE71</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_video" id="71E97DDD-0188-51EE-B18E-C86E07203924">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 20:39:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status que identifica o video como ativo ou inativo.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_video" id="FAA724B4-7AA2-D5B3-4872-B081395101D5">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 21:18:28 UTC</createdTime>
+<commentInRDBMS><![CDATA[Conteudo do video.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT016</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5EF8F1CE-7435-2DC4-DB39-4228B1101116" name="T_SGV_VIDEO PK">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 20:39:00 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>DC4F0FB6-2CBC-5AD6-F616-54A72C8A9732</attributeRef>
+<attributeRef>FA54314A-97AE-6513-301A-DCC378DAE6EE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

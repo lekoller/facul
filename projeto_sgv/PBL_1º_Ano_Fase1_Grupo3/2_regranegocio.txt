@@ -1,0 +1,9 @@
+Cada cliente pode fazer compras, que serão registradas como Vendas.
+Cada venda deve ser registrada com um código do cliente, identificador
+da venda (SEQUENCE ou IDENTITY) crescente, valor de venda, status da venda,
+sendo estes definidos pelos valores (A)berto, (P)ago, (E)ntregue ou (C)ancelada, 
+além da data de abertura, e método de pagamento (crédito a vista, credito 
+parcelado, pix ou boleto) como valores obrigatórios. Data de pagamento e 
+entrega, número da nota fiscal e número de parcelas entram como dados opcionais.
+A venda pode conter um ou muitos produtos e a quantidade de cada produto deve
+ser registrada.

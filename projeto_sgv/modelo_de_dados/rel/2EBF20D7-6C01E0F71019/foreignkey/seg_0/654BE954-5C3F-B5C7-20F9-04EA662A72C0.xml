@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="654BE954-5C3F-B5C7-20F9-04EA662A72C0" containerWithKeyObject="D6395F62-480D-8A2B-B592-3CF87DC86E6D" localFKIndex="0A112E30-B944-786A-859E-1FEFB9CC6544" name="FK_SGV_VIDEO_CLASS">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>AC85DAAB-6A36-FE20-45EF-361A684236CF</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<referredTableLongName>T_SGV_CLASSIFICACAO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>72C1F7F0-1A27-170C-4A58-D8A0893F50F4</referredTableID>
+<keyObject>5DD57CC8-ABF5-531B-F845-0F6E98323826</keyObject>
+<referredKeyID>5DD57CC8-ABF5-531B-F845-0F6E98323826</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_classificacao</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

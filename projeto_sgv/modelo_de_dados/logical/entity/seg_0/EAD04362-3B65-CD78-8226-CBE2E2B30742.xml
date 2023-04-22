@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EAD04362-3B65-CD78-8226-CBE2E2B30742" name="T_SGV_PESSOA_JURIDICA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:55:02 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="9DD30F74-A331-7DAE-D8D7-CB20C5BE93BF">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:57:26 UTC</createdTime>
+<generatorID>4543B3E7-3CCE-4F25-5949-E0E92D372755</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>3BC3E673-5B9E-003A-36DB-90E803C67F86</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pj" id="C7683026-68A4-06BA-6E76-015679474DA8">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:55:22 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_cnpj" id="51EDC067-20A8-CC4C-ADB1-2024C3C5090F">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:55:35 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_inscr_est" id="4E0CB5D3-25D3-80EC-31DD-C59C5EBA55A2">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:56:19 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_fundacao" id="0264F40B-C000-A78D-C72A-D522BA6FCA51">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:56:33 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F366798A-89FF-0048-D526-3C3DEAC9343B" name="T_SGV_PESSOA_JURIDICA PK">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:55:33 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C7683026-68A4-06BA-6E76-015679474DA8</attributeRef>
+<attributeRef>9DD30F74-A331-7DAE-D8D7-CB20C5BE93BF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

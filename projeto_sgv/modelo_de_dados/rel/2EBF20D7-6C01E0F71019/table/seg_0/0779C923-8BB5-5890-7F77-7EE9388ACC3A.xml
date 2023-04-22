@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0779C923-8BB5-5890-7F77-7EE9388ACC3A" name="T_SGV_VENDA_PRODUTO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>F4C9538A-3B9F-E81F-3F31-BF65224824E0</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="64C2646F-CA57-5685-A1EE-77BF9DF32E2C">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>A79CBB34-F40A-2ECC-E007-F357900C68C7</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8AE1161-C524-473A-DC71-D46964CC4ED4" referredColumn="1EB7FDB2-A12C-ED5F-A335-2186F06B355A"/>
+</associations>
+</Column>
+<Column name="id_venda" id="3CC5DDB7-A3F7-2D7E-25C8-4A7E5966ED83">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>23FBB793-9878-128A-630B-CD0B48E8364E</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B8AE1161-C524-473A-DC71-D46964CC4ED4" referredColumn="714531F5-61D4-84E5-E1BF-3D0787C04F0B"/>
+</associations>
+</Column>
+<Column name="id_produto" id="82D8F885-DE45-FC1D-AD7B-7B6ECDA55B84">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>41CF2858-02F6-1D41-7C4E-AA7898221A7D</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5C454898-72CB-81DE-5712-313460146661" referredColumn="7ADC1748-79EB-8624-1167-B95430A6C050"/>
+</associations>
+</Column>
+<Column name="cd_venda_produto" id="CA0DBC12-1DAC-5105-DA2B-8B1EBC7B7C11">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>0F52AFBB-20DC-A5CD-B9AC-77FB8E7A8359</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="qt_produto" id="9B8E3486-4A16-F062-48DC-D8D0848FCBF6">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>7590C8D2-F74B-76E1-CCAD-06ED628E8EE3</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="4175BDEF-9A35-2B02-6B0A-891B47A0B9FE" name="PK_SGV_VENDA_PRODUTO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>4C56DAF5-C965-EB1E-05E4-EF6D05FE07EE</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CA0DBC12-1DAC-5105-DA2B-8B1EBC7B7C11"/>
+<colUsage columnID="3CC5DDB7-A3F7-2D7E-25C8-4A7E5966ED83"/>
+<colUsage columnID="64C2646F-CA57-5685-A1EE-77BF9DF32E2C"/>
+<colUsage columnID="82D8F885-DE45-FC1D-AD7B-7B6ECDA55B84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5ED8CEE6-F3C7-7EC2-A169-48A1BA8AA0A3" name="FK_SGV_VENDAPROD_VENDA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>F3153A17-5C41-4CE2-EB1B-AAB14CA03932</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3CC5DDB7-A3F7-2D7E-25C8-4A7E5966ED83"/>
+<colUsage columnID="64C2646F-CA57-5685-A1EE-77BF9DF32E2C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2174A964-D530-54EB-70A9-DB26BC2AC539" name="FK_SGV_VENDAPROD_PROD">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>EB6150B2-55F7-7E23-6800-21F3BF9B2D9C</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82D8F885-DE45-FC1D-AD7B-7B6ECDA55B84"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

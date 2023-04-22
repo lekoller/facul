@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="555149AA-09F3-A1B4-45CA-2A6962FE2B5E" name="T_SGV_FUNCIONARIO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>F1828BC5-D924-BBDE-9142-336DD5CA668B</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_funcionario" id="371F8BE1-CAA2-75F0-0341-ACE7CA4D2CA7">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Codigo do funcionario.</commentInRDBMS>
+<generatorID>FEAE879D-A5E0-03D9-78DB-84B43CC68F18</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_funcionario" id="ABA4E07B-BE02-72A3-4838-F58D755C6295">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Nome do funcionario.</commentInRDBMS>
+<generatorID>82091925-A9B2-B658-9DDB-2247B38AE65B</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_cpf" id="25165CA6-03B8-5EC1-ECD5-84F6749A1507">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<comment>Adicionar UNIQUE constraint.</comment>
+<commentInRDBMS>Numero do CPF.</commentInRDBMS>
+<generatorID>19C4DB8A-E903-47CB-530F-8BE0D31132C7</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_nascimento" id="50621933-630A-2E33-A967-C038129F14F7">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Data de nascimento do funcionario.</commentInRDBMS>
+<generatorID>9BA52B55-70C3-F9A9-D406-FADA0E36DB04</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_ddd" id="B6FC0140-DC20-1687-4FC2-2B10070E6223">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Nũmero de DDD do telefone do funcionario.</commentInRDBMS>
+<generatorID>57B8D0C9-A7EF-F4A5-B676-FDF5D0D1C9B2</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_telefone" id="B003720B-CE51-00E8-839C-579A6732C798">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Numero de telefone do funcionario com DDD.</commentInRDBMS>
+<generatorID>3EC12A0C-A4D6-80CB-3FBC-47D97D8DBEE0</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_email" id="206785F6-1D1E-93E5-F54E-0FABF18E4463">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Email do funcionario.</commentInRDBMS>
+<generatorID>4BF80980-CB45-7657-BACD-554265082BD9</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_cargo" id="C1C7C1E4-2454-696D-1332-59A5C737F339">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Nome do cargo do funcionario.</commentInRDBMS>
+<generatorID>C7688A54-51FA-8CC0-A603-0976AD132B23</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nm_departamento" id="2E3DDDC6-E9CF-718B-C299-7E84C175FC4B">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>C6CE68F2-0FEF-49B8-821C-90E685CB6350</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D54D690-B80B-DF11-AECF-9FC8BF8BEF13" name="PK_SGV_FUNCIONARIO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>8BED6516-19AD-508A-CCC4-355FA1D85777</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="371F8BE1-CAA2-75F0-0341-ACE7CA4D2CA7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6EAA9120-9948-CEE8-D382-685B34822413" name="UN_SGV_FUNC_CPF">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:18:49 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25165CA6-03B8-5EC1-ECD5-84F6749A1507"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

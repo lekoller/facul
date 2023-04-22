@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="F4C9538A-3B9F-E81F-3F31-BF65224824E0" name="T_SGV_VENDA_PRODUTO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 00:58:00 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="A79CBB34-F40A-2ECC-E007-F357900C68C7">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:07:43 UTC</createdTime>
+<generatorID>F3153A17-5C41-4CE2-EB1B-AAB14CA03932</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>C2770036-8265-20B8-8DF0-D95BB0C63355</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_venda" id="23FBB793-9878-128A-630B-CD0B48E8364E">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 01:03:04 UTC</createdTime>
+<generatorID>F3153A17-5C41-4CE2-EB1B-AAB14CA03932</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>907BAEF2-203B-1C71-0643-3B76019F2BC8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_produto" id="41CF2858-02F6-1D41-7C4E-AA7898221A7D">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 01:05:32 UTC</createdTime>
+<generatorID>EB6150B2-55F7-7E23-6800-21F3BF9B2D9C</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>B360A3D2-057A-2555-ABAA-AD19BDC2B180</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_venda_produto" id="0F52AFBB-20DC-A5CD-B9AC-77FB8E7A8359">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 01:02:25 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_produto" id="7590C8D2-F74B-76E1-CCAD-06ED628E8EE3">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 01:22:59 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4C56DAF5-C965-EB1E-05E4-EF6D05FE07EE" name="T_SGV_VENDA_PRODUTO PK">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 01:02:43 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>0F52AFBB-20DC-A5CD-B9AC-77FB8E7A8359</attributeRef>
+<attributeRef>23FBB793-9878-128A-630B-CD0B48E8364E</attributeRef>
+<attributeRef>A79CBB34-F40A-2ECC-E007-F357900C68C7</attributeRef>
+<attributeRef>41CF2858-02F6-1D41-7C4E-AA7898221A7D</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

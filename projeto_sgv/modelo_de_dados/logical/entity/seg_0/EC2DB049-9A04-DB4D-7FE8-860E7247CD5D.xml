@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EC2DB049-9A04-DB4D-7FE8-860E7247CD5D" name="T_SGV_PESSOA_FISICA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:17:48 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="386E9029-57DA-61F0-D6CA-210187C11B55">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:58:44 UTC</createdTime>
+<generatorID>50824CA3-F3CA-4FAD-CB10-71F7B3FD0A1F</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>3BC3E673-5B9E-003A-36DB-90E803C67F86</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_pf" id="F061C3DA-06CD-5EA7-6FFC-B1D31B4C20E3">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:18:18 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cpf" id="BC4D334B-F91A-78DE-D6B0-3F7B58947216">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:18:58 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_nascimento" id="5C2CBDF7-DE53-9A99-51E9-9E8383A86EE5">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:20:51 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_sexo" id="BA6C49FD-98CC-F162-0164-EB1DD737B90B">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:22:24 UTC</createdTime>
+<commentInRDBMS>Sexo biolõgico do cliente pessoa fĩsica.</commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_genero" id="12AA87BD-6DFF-0969-AAD5-6C90AF763006">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:23:15 UTC</createdTime>
+<commentInRDBMS>Genero do cliente pessoa fisica</commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="54622F96-BC3C-8DFF-5903-9CD1CAE6C07B" name="T_SVG_PESSOA_FISICA PK">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:19:01 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F061C3DA-06CD-5EA7-6FFC-B1D31B4C20E3</attributeRef>
+<attributeRef>386E9029-57DA-61F0-D6CA-210187C11B55</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

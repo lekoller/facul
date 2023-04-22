@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="72C1F7F0-1A27-170C-4A58-D8A0893F50F4" name="T_SGV_CLASSIFICACAO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>230B5254-A095-9061-BC32-1E3BCD392D8E</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_classificacao" id="93DAE622-513F-59EA-A229-336AC756DA44">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>4153DBB7-1A71-60BB-C100-8968248FDE71</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ds_classificacao" id="B1E86CC7-F46D-37E8-CBEB-61AD34F42F02">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>DE8EEBC1-A530-6BB7-9557-470CE1F27739</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5DD57CC8-ABF5-531B-F845-0F6E98323826" name="PK_SGV_CLASSIFICACAO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>419E73F9-223F-36AC-3716-761E58A6E770</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93DAE622-513F-59EA-A229-336AC756DA44"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7F36847-DB07-6C23-E3B6-8A9A2377DC45" name="UN_SGV_CLASS_DS">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:34:16 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B1E86CC7-F46D-37E8-CBEB-61AD34F42F02"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

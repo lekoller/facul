@@ -1,0 +1,181 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EB65787D-3A1D-32C7-2BC2-C97029BE012A" name="T_SGV_VENDA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 00:52:07 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="C2770036-8265-20B8-8DF0-D95BB0C63355">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:07:43 UTC</createdTime>
+<generatorID>D8D369FB-00C8-13EC-AF25-F53B7513A537</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<referedAttribute>3BC3E673-5B9E-003A-36DB-90E803C67F86</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_venda" id="907BAEF2-203B-1C71-0643-3B76019F2BC8">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 00:52:31 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_montante" id="035C20A6-8C61-0C0C-6C33-A3E6BB9C7E2C">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 00:53:10 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_venda" id="D3B24460-0648-88DC-E4A3-87362B448A53">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 01:12:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[Status da venda.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_metodo_pagto" id="CD9E23A3-2E2F-8C35-802A-B7758FE8A2E1">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:48:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cõdigo de mẽtodo de pagamento: V para credito a vista, P para credito parcelado, X para pix e B para boleto.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_abertura" id="DDB5EF22-7528-18BF-CB9F-15EB909FD079">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 01:11:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data e hora do inicio da compra.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_pagamento" id="1EE77BD8-5C8B-90FF-2835-132F5C57FC5D">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 00:54:29 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_entrega" id="D400C364-0FF1-327E-2263-B344167253D2">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:31:52 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_cancelamento" id="691DA6D0-99CB-DE8C-F4DF-39C9DE2855B8">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 01:30:02 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="cd_nota_fiscal" id="FD207676-AFC5-5D95-6209-6EB072F84453">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:32:17 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_parcelas" id="47DD9AAE-AF43-60CD-876A-C9D44117DC73">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 00:51:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero de parcelas para pagamento a prazo.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5203D530-C6A5-7C74-6224-29A4F01D04C9" name="T_SGV_COMPRA PK">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-13 00:53:06 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>907BAEF2-203B-1C71-0643-3B76019F2BC8</attributeRef>
+<attributeRef>C2770036-8265-20B8-8DF0-D95BB0C63355</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

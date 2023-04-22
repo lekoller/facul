@@ -1,0 +1,190 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="37883DB1-8727-A011-3CAE-6904463680A2" name="T_SGV_VENDA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>EB65787D-3A1D-32C7-2BC2-C97029BE012A</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="1EB7FDB2-A12C-ED5F-A335-2186F06B355A">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>C2770036-8265-20B8-8DF0-D95BB0C63355</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DD359DBF-B54D-0A76-3577-C44B3AE67029" referredColumn="1D6FED50-BFEF-C2EB-3451-E496AA961A2E"/>
+</associations>
+</Column>
+<Column name="id_venda" id="714531F5-61D4-84E5-E1BF-3D0787C04F0B">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>907BAEF2-203B-1C71-0643-3B76019F2BC8</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_montante" id="62FD7F28-29F6-1357-6E62-9FEDE7D53968">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>035C20A6-8C61-0C0C-6C33-A3E6BB9C7E2C</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_venda" id="D5718D64-27CD-0A07-4B07-32314439D645">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Status da venda.</commentInRDBMS>
+<generatorID>D3B24460-0648-88DC-E4A3-87362B448A53</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_metodo_pagto" id="BE9E7B9D-F0BB-D529-1939-33D69B54D3B4">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Cõdigo de mẽtodo de pagamento: V para credito a vista, P para credito parcelado, X para pix e B para boleto.</commentInRDBMS>
+<generatorID>CD9E23A3-2E2F-8C35-802A-B7758FE8A2E1</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_abertura" id="ADD5807A-30A1-B43A-47BF-46237FEF3FC4">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Data e hora do inicio da compra.</commentInRDBMS>
+<generatorID>DDB5EF22-7528-18BF-CB9F-15EB909FD079</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_pagamento" id="ED22AE86-1BDE-CCAD-A874-D09CDFABC56C">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>1EE77BD8-5C8B-90FF-2835-132F5C57FC5D</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_entrega" id="C7B248E9-BECE-03C2-01AB-5D4C5D3FCCAB">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>D400C364-0FF1-327E-2263-B344167253D2</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_cancelamento" id="C64A34BF-43F7-2C1F-9CF1-520CE9FEF256">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>691DA6D0-99CB-DE8C-F4DF-39C9DE2855B8</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_nota_fiscal" id="347402C7-AA76-EDAB-BA7C-2FFB39D21F9C">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>FD207676-AFC5-5D95-6209-6EB072F84453</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_parcelas" id="6DD33EB6-1CE5-DCAD-8071-F64A0D850164">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<commentInRDBMS>Numero de parcelas para pagamento a prazo.</commentInRDBMS>
+<generatorID>47DD9AAE-AF43-60CD-876A-C9D44117DC73</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1A15893F-9A2D-CEC5-7DE9-CEAAAA7B549C" name="PK_SGV_VENDA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>5203D530-C6A5-7C74-6224-29A4F01D04C9</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="714531F5-61D4-84E5-E1BF-3D0787C04F0B"/>
+<colUsage columnID="1EB7FDB2-A12C-ED5F-A335-2186F06B355A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F4E2DAC6-5C36-2BBC-C44A-369F7F0FE4DC" name="FK_SGV_VENDA_CLIENTE">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>D8D369FB-00C8-13EC-AF25-F53B7513A537</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1EB7FDB2-A12C-ED5F-A335-2186F06B355A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SGV_VENDA_ST" directorySegmentName="seg_0" id="29062C12-67B6-E504-5E00-C5BE7222BC19">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:42:01 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<rule>ST_VENDA == A || ST_VENDA == P || ST_VENDA == E || ST_VENDA == C</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_SGV_VENDA_M_PAGTO" directorySegmentName="seg_0" id="64331B17-502E-83A2-D5D9-E34FAEE8BB2D">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:45:28 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<rule>CD_METODO_PAGAMENTO == V || CD_METODO_PAGAMENTO == P || CD_METODO_PAGAMENTO == X || CD_METODO_PAGAMENTO == B</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

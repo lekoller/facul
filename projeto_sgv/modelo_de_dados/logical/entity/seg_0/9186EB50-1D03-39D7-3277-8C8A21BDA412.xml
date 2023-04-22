@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9186EB50-1D03-39D7-3277-8C8A21BDA412" name="T_SGV_CATEGORIA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 21:31:30 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_categoria" id="BD594632-5A5F-E3CA-79C5-9DB87E231AE7">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 21:32:18 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ds_categoria" id="6C4732AF-D2C0-A02E-CFB9-7AE3BF72D910">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 21:32:50 UTC</createdTime>
+<comment><![CDATA[Fazer uma UNIQUE constraint.]]></comment>
+<commentInRDBMS><![CDATA[Descricao da categoria.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT040</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_categoria" id="019EA68C-CA6E-6CAB-ACE9-1DD46DABE2FF">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 21:42:59 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_inicio" id="1D5C91A6-A8E7-386F-BF27-C22F65FA3A0C">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 21:43:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data de inicio da categoria.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="dt_termino" id="8110508E-6900-B36A-A5FB-E0315537215D">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 21:48:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[Data do termino da categoria.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FFE01863-20A3-87DA-546C-DD379679D4CD" name="T_SGV_CATEGORIA PK">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-12 21:32:40 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD594632-5A5F-E3CA-79C5-9DB87E231AE7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

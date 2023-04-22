@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D2282A0A-E389-3212-51E1-2D7D677F9C71" name="T_SGV_CLIENTE">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:34:26 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="cd_cliente" id="3BC3E673-5B9E-003A-36DB-90E803C67F86">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:34:44 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cõdigo identificador do cliente.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nm_cliente" id="7118A081-CCA9-B446-01E3-C941E9DBD9BA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:35:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[Nome do cliente]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="st_cliente" id="8BF41CB2-185D-6281-311E-96819F726DEC">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:36:23 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_login" id="B82FBBD7-B006-C94A-9A28-540FB4DD75DF">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:37:23 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vl_senha" id="F7FBA736-734A-CB22-79AA-DAF2B3AF6C5B">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:38:10 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="qt_estrelas" id="C1128056-5AF1-529C-2542-EAE41F2BAD7B">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:38:45 UTC</createdTime>
+<commentInRDBMS><![CDATA[Quantidade de estrelas do cliente.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_ddd" id="C0BA3C52-2305-FCEA-E181-351B4201985B">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:39:38 UTC</createdTime>
+<commentInRDBMS><![CDATA[Cõdigo de DDD do numero de telefone do cliente.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_telefone" id="B35808A9-F00D-9BBE-4804-C058C5A27F02">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:40:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[Numero do telefone do cliente.]]></commentInRDBMS>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>9</dataTypePrecision>
+<ownDataTypeParameters>,9,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="5BD2C09D-463F-D90A-3C79-38A43B09507A" name="T_SGV_CLIENTE PK">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-18 23:35:30 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<engineerTo>
+<item key="2EBF20D7-6817-A678-D11C-6C01E0F71019" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3BC3E673-5B9E-003A-36DB-90E803C67F86</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

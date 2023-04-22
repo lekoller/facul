@@ -1,0 +1,234 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="88D91310-9B4E-E46F-E50C-67D0DBC01BFA" name="T_SGV_CHAMADO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>14FB1488-F9DD-91AA-9232-AFEBAF40FC68</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="cd_cliente" id="9DDD1316-FC91-D299-7051-0F4A52BD3B38">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>122FF54A-B409-6F3C-32D7-6DC14878B499</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>128</dataTypeSize>
+<ownDataTypeParameters>128,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="CD540454-CBF6-D564-5962-BFE1B68DB543" referredColumn="1D6FED50-BFEF-C2EB-3451-E496AA961A2E"/>
+</associations>
+</Column>
+<Column name="id_produto" id="835B28E0-7B76-D6F5-39A0-E62FE2D8A24A">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>9C07735F-8C82-E3F6-F9BF-E335C452C6F0</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="75A6F749-573D-45A7-96D0-ECA51BB92D05" referredColumn="7ADC1748-79EB-8624-1167-B95430A6C050"/>
+</associations>
+</Column>
+<Column name="id_chamado" id="A22B7544-323D-8306-B902-11EAE9E5FD5C">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>335A0281-74F5-0691-224D-89D0B4A50901</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cd_funcionario" id="42CD024D-2687-7701-F1AE-584DB39636CA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>F4E3CBEB-A980-9916-2524-A5557C0AB32C</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="D14A38B9-0E3B-B9BF-A553-EE7CDC7EF219" referredColumn="371F8BE1-CAA2-75F0-0341-ACE7CA4D2CA7"/>
+</associations>
+</Column>
+<Column name="cd_tipo" id="B6B7FFAC-AC69-EC13-30C9-22291EF4D32D">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>1BED4A76-44D5-7C70-C933-9F47B988E244</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="st_chamado" id="893C0C94-261C-03BE-1104-B2DAAE577BF5">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>8E22156C-CA7E-98F0-6A64-EFE09C32B4D5</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tx_chamado" id="42BA04EC-899F-B9F1-8EFE-64F08A90FED3">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>DB2479AC-903F-B3C0-30A6-9181E5486A4E</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_abertura" id="B5F029A0-8301-BD89-C3AB-0F9D02BDCCDA">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>EBB09630-C9CD-485C-1013-FB78D5C1DF3F</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_atendimento" id="2F4C37B6-D6F6-9380-7BD0-A7808308EA55">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>99899618-A5C9-BCAA-2EBB-5492C4FF7B78</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="dt_fechamento" id="F18A719D-D264-E3FE-1A70-C01AA795D9B1">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>B7485F9A-2907-C054-6214-C1F84F584E77</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_satisfacao" id="0B7C8B34-3616-B7C8-1E84-5B9017E2EB91">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>3198DD80-D1A7-CB2B-43C6-8666E4DD09F4</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vl_duracao_h" id="5A0F5A90-9D76-2F2B-82F5-F5653F208A5E">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:38:13 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C44C19AE-645B-2368-B744-2FCD80C114BE" name="PK_SGV_CHAMADO">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>920936A9-569C-02D4-DF9B-95C3B252FD9E</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A22B7544-323D-8306-B902-11EAE9E5FD5C"/>
+<colUsage columnID="835B28E0-7B76-D6F5-39A0-E62FE2D8A24A"/>
+<colUsage columnID="9DDD1316-FC91-D299-7051-0F4A52BD3B38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="50A1ED88-F713-B429-3865-8044A7C30266" name="FK_SGV_CHAM_PROD">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>3D76E0D7-E56E-068F-5652-AC953E6A5183</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="835B28E0-7B76-D6F5-39A0-E62FE2D8A24A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="702B074C-C970-A4D7-F976-AB9E1C4F72DB" name="FK_SGV_CHAM_CLIENTE">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>4E5D7AB1-AFC1-8399-11E5-50403F93DE72</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9DDD1316-FC91-D299-7051-0F4A52BD3B38"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C19E7C0B-7B93-9AD3-74C0-8980E9501AA1" name="FK_SGV_CHAM_FUNC">
+<createdBy>oracle</createdBy>
+<createdTime>2023-03-19 16:37:46 UTC</createdTime>
+<generatorID>27FB9BE4-2542-418B-EB12-91B0107BAABC</generatorID>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="42CD024D-2687-7701-F1AE-584DB39636CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_SGV_CHAM_ST" directorySegmentName="seg_0" id="BB7F02EE-8062-FD94-5269-6DB841318EE3">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:11:47 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<rule>ST_CHAMADO == A || ST_CHAMADO == E || ST_CHAMADO == C || ST_CHAMADO == F || ST_CHAMADO == X</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_SGV_CHAM_VL_SATSF" directorySegmentName="seg_0" id="53E2ACBE-933A-15C5-894D-DD2B7348EB21">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:14:08 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<rule>VL_SATISFACAO &gt;= 1&lt;br/&gt;VL_SATISFACAO &lt;= 10</rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_SGV_CHAMA_CD_TIPO" directorySegmentName="seg_0" id="34ED25AE-EAC4-D63C-F572-A1144604EE97">
+<createdBy>leandro</createdBy>
+<createdTime>2023-03-19 19:16:01 UTC</createdTime>
+<ownerDesignName>modelo_de_dados</ownerDesignName>
+<rule>CD_TIPO == 1 || CD_TIPO == 2</rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
