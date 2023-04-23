@@ -1,7 +1,7 @@
--- oracle db insert queries:
--- 1. insert into table mc_depto
+-- 1.2
 
--- a) Para essa etapa de instruções DML, analise as recomendações abaixo e para cada solicitação, escreva a instrução SQL que resolva as ocorrências abaixo: Popular a tabela DEPARTAMENTO, inserindo no mínimo 7 departamentos, conforme sugestão abaixo: 
+-- a) Para essa etapa de instruções DML, analise as recomendações abaixo e para cada solicitação, escreva a instrução SQL que resolva as ocorrências abaixo: 
+--    Popular a tabela DEPARTAMENTO, inserindo no mínimo 7 departamentos, conforme sugestão abaixo: 
 
 INSERT INTO MC_DEPTO (NM_DEPTO, ST_DEPTO) VALUES ('COMERCIAL', 'A');
 -- 1 row(s) inserted.
@@ -1050,36 +1050,6 @@ UPDATE MC_FUNCIONARIO SET ST_FUNC = 'I', DT_DESLIGAMENTO = SYSDATE WHERE CD_FUNC
 -- u) Cadastre um atendimento SAC na tabela MC_SGV_SAC. Após isso, utilize outro comando DML para atualizar a descrição detalhada de retorno do 
 --    SAC feito pelo funcionário. Insira um conteúdo significativo. Não se esqueça de atualizar também a data e hora de atendimento e também  
 --    acrescendo o número total de horas do atendimento SAC.
-
--- remember
-CREATE TABLE MC_SGV_SAC (
-    NR_SAC NUMBER NOT NULL,
-    NR_CLIENTE NUMBER(10) NOT NULL,
-    CD_PRODUTO NUMBER(10) NOT NULL,
-    CD_FUNCIONARIO NUMBER(10),
-    DS_DETALHADA_SAC CLOB,
-    DT_ABERTURA_SAC DATE,
-    HR_ABERTURA_SAC NUMBER(2),
-    DT_ATENDIMENTO DATE,
-    HR_ATENDIMENTO_SAC NUMBER(2),
-    NR_TEMPO_TOTAL_SAC NUMBER(10),
-    DS_DETALHADA_RETORNO_SAC CLOB,
-    TP_SAC CHAR(1) NOT NULL,
-    ST_SAC CHAR(1),
-    NR_INDICE_SATISFACAO NUMBER(2)
-);
-
-ALTER TABLE MC_SGV_SAC
-ADD CONSTRAINT PK_MC_SGV_SAC PRIMARY KEY (NR_SAC);
-
-CREATE SEQUENCE SEQ_NR_SAC
-START WITH 1
-INCREMENT BY 1
-NOCACHE;
-
-ALTER TABLE MC_SGV_SAC
-MODIFY NR_SAC DEFAULT SEQ_NR_SAC.NEXTVAL;
----
 
 INSERT INTO MC_SGV_SAC (
   NR_CLIENTE, CD_PRODUTO, TP_SAC, DS_DETALHADA_SAC, DT_ABERTURA_SAC, HR_ABERTURA_SAC, ST_SAC
