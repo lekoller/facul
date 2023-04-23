@@ -36,8 +36,7 @@ INSERT INTO MC_FUNCIONARIO (
   VL_SALARIO, 
   DS_EMAIL, 
   ST_FUNC, 
-  DT_CADASTRAMENTO, 
-  DT_DESLIGAMENTO
+  DT_CADASTRAMENTO 
 ) VALUES (
   1, 
   'JOAO', 
@@ -48,8 +47,7 @@ INSERT INTO MC_FUNCIONARIO (
   2000, 
   'joao@email.com', 
   'A', 
-  TO_DATE('01/01/2000', 'DD/MM/YYYY'), 
-  TO_DATE('01/01/2000', 'DD/MM/YYYY')
+  TO_DATE('01/01/2000', 'DD/MM/YYYY') 
 );
 -- 1 row(s) inserted.
 
@@ -64,8 +62,7 @@ INSERT INTO MC_FUNCIONARIO (
   VL_SALARIO, 
   DS_EMAIL, 
   ST_FUNC, 
-  DT_CADASTRAMENTO, 
-  DT_DESLIGAMENTO
+  DT_CADASTRAMENTO 
 ) VALUES (
   1, 
   'JOAQUIM', 
@@ -77,8 +74,7 @@ INSERT INTO MC_FUNCIONARIO (
   1000, 
   'joaquim@email.com', 
   'A', 
-  TO_DATE('01/01/2020', 'DD/MM/YYYY'), 
-  TO_DATE('01/01/2021', 'DD/MM/YYYY')
+  TO_DATE('01/01/2020', 'DD/MM/YYYY') 
 );
 -- 1 row(s) inserted.
 
@@ -740,23 +736,23 @@ INSERT INTO MC_CLIENTE (
 ) VALUES ('Bitcoin Company', 'A', 'btcc@email.com', '999798929', 'bcompany', 'u3459a');
 -- 1 row(s) inserted.
 
--- Resposta: Sim, foi possível incluir o novo cliente, pois a coluna NM_CLIENTE é única, ou seja, não pode haver dois clientes com o mesmo nome; porém, 
+-- Resposta: Sim, foi possível incluir o novo cliente, pois a coluna NM_CLIENTE é única, ou seja, não pode haver dois clientes com o mesmo nome, porém, 
 --           para a coluna NM_LOGIN não foi específicado, pelo modelo físico apresentado no enunciado, como portadora de constraint do tipo UNIQUE, 
 --           deixando assim esta falha no sistema.
 
 -- g) Cadastre as seguintes categorias para os produtos: 
---    Artesanato; 
---    Áudio; 
---    Brinquedos; 
---    Celular e Smartphone; 
---    Colchões; 
---    Esporte e Lazer; 
---    Ferramentas; 
---    Games; 
---    Informática; 
---    Livros; 
---    Pet Shop; 
---    TV e
+--    Artesanato
+--    Áudio
+--    Brinquedos
+--    Celular e Smartphone
+--    Colchões
+--    Esporte e Lazer
+--    Ferramentas
+--    Games
+--    Informática
+--    Livros
+--    Pet Shop
+--    TV
 --    Utilidades Domésticas.
 
 INSERT INTO MC_CATEGORIA_PROD (
@@ -825,34 +821,10 @@ INSERT INTO MC_CATEGORIA_PROD (
 -- 1 row(s) inserted.
 
 -- h) Cadastre as seguintes categorias para os vídeos: 
---    Instalação do produto; 
---    Uso no cotidiano; 
---    Comercial com personalidade; 
+--    Instalação do produto
+--    Uso no cotidiano
+--    Comercial com personalidade
 --    entre outros.
-
--- remember
-
-CREATE TABLE MC_CATEGORIA_PROD (
-    CD_CATEGORIA NUMBER NOT NULL,
-    TP_CATEGORIA CHAR(1) NOT NULL,
-    DS_CATEGORIA VARCHAR2(500) NOT NULL,
-    DT_INICIO DATE,
-    DT_TERMINO DATE,
-    ST_CATEGORIA CHAR(1) NOT NULL
-);
-
-ALTER TABLE MC_CATEGORIA_PROD
-ADD CONSTRAINT PK_MC_CATEGORIA PRIMARY KEY (CD_CATEGORIA);
-
-CREATE SEQUENCE SEQ_CD_CATEGORIA
-START WITH 1
-INCREMENT BY 1
-NOCACHE;
-
-ALTER TABLE MC_CATEGORIA_PROD
-MODIFY CD_CATEGORIA DEFAULT SEQ_CD_CATEGORIA.NEXTVAL;
-
---- 
 
 INSERT INTO MC_CATEGORIA_PROD (
   TP_CATEGORIA, DS_CATEGORIA, ST_CATEGORIA
@@ -880,52 +852,6 @@ INSERT INTO MC_CATEGORIA_PROD (
 -- 1 row(s) inserted.
 
 -- i) Cadastre 20 produtos e associe as categorias adequadas ao produto.
-
--- Artesanato: Caixa decorada com decoupage.
--- Áudio: Fone de ouvido sem fio.
--- Brinquedos: Quebra-cabeça de 500 peças.
--- Celular e Smartphone: Smartphone Samsung Galaxy S21.
--- Colchões: Colchão de espuma de alta densidade.
--- Esporte e Lazer: Bicicleta de montanha aro 29.
--- Ferramentas: Kit de ferramentas com 100 peças.
--- Games: Jogo de videogame FIFA 23.
--- Informática: Notebook Dell Inspiron 15.
--- Livros: Livro "A sutil arte de ligar o f*da-se".
--- Pet Shop: Coleira de couro para cachorro.
--- TV: Smart TV LG de 55 polegadas.
--- Utilidades Domésticas: Jogo de panelas Tramontina de 5 peças.
--- Artesanato: Colar artesanal de pedras.
--- Áudio: Caixa de som Bluetooth portátil.
--- Brinquedos: Boneca Baby Alive.
--- Celular e Smartphone: iPhone 13.
--- Colchões: Colchão de molas ensacadas.
--- Esporte e Lazer: Raquete de tênis de mesa profissional.
--- Ferramentas: Serra circular de bancada.
-
--- remember
-CREATE TABLE MC_PRODUTO (
-    CD_PRODUTO NUMBER(10) NOT NULL,
-    CD_CATEGORIA NUMBER NOT NULL,
-    NR_CD_BARRAS_PROD VARCHAR2(50),
-    DS_PRODUTO VARCHAR2(80) NOT NULL,
-    VL_UNITARIO NUMBER(8,2) NOT NULL,
-    TP_EMBALAGEM VARCHAR2(15),
-    ST_PRODUTO CHAR(1),
-    VL_PERC_LUCRO NUMBER(8,2),
-    DS_COMPLETA_PROD VARCHAR2(4000) NOT NULL
-);
-
-ALTER TABLE MC_PRODUTO
-ADD CONSTRAINT PK_MC_PRODUTO PRIMARY KEY (CD_PRODUTO);
-
-CREATE SEQUENCE SEQ_CD_PRODUTO
-START WITH 1
-INCREMENT BY 1
-NOCACHE;
-
-ALTER TABLE MC_PRODUTO
-MODIFY CD_PRODUTO DEFAULT SEQ_CD_PRODUTO.NEXTVAL;
-
 
 INSERT INTO MC_PRODUTO (
   CD_CATEGORIA, NR_CD_BARRAS_PROD, DS_PRODUTO, VL_UNITARIO, TP_EMBALAGEM, ST_PRODUTO, VL_PERC_LUCRO, DS_COMPLETA_PROD
@@ -1029,3 +955,178 @@ INSERT INTO MC_PRODUTO (
 
 -- j) Cadastre 2 vídeos de produtos na tabela MC_SGV_PRODUTO_VIDEO e associe esses 2 vídeos em um único produto já cadastrado. 
 --    Associe também as categorias adequadas ao vídeo.
+
+INSERT INTO MC_SGV_PRODUTO_VIDEO (
+  CD_PRODUTO, CD_CATEGORIA, TP_VIDEO_PROD, DS_PATH_VIDEO_PROD, ST_VIDEO_PROD
+) VALUES (2, 14, 'MP4', 'C:\videos\video1.mp4', 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_SGV_PRODUTO_VIDEO (
+  CD_PRODUTO, CD_CATEGORIA, TP_VIDEO_PROD, DS_PATH_VIDEO_PROD, ST_VIDEO_PROD
+) VALUES (2, 15, 'MP4', 'C:\videos\video2.mp4', 'A');
+-- 1 row(s) inserted.
+
+-- k) Por fim, cadastre 5 visualizações de vídeos de produtos na tabela MC_SGV_VISUALIZACAO_VIDEO e associe a um cliente a seu critério.
+
+INSERT INTO MC_SGV_VISUALIZACAO_VIDEO (
+  NR_CLIENTE, CD_PRODUTO, DT_VISUALZACAO, NR_HORA_VISULIZACAO, NR_MINUTO_VIDEO, NR_SEGUNDO_VIDEO
+) VALUES (1, 2, TO_DATE('01/01/2020', 'DD/MM/YYYY'), 10, 10, 10);
+-- 1 row(s) inserted.
+
+INSERT INTO MC_SGV_VISUALIZACAO_VIDEO (
+  NR_CLIENTE, CD_PRODUTO, DT_VISUALZACAO, NR_HORA_VISULIZACAO, NR_MINUTO_VIDEO, NR_SEGUNDO_VIDEO
+) VALUES (2, 2, TO_DATE('01/01/2020', 'DD/MM/YYYY'), 10, 10, 10);
+-- 1 row(s) inserted.
+
+INSERT INTO MC_SGV_VISUALIZACAO_VIDEO (
+  NR_CLIENTE, CD_PRODUTO, DT_VISUALZACAO, NR_HORA_VISULIZACAO, NR_MINUTO_VIDEO, NR_SEGUNDO_VIDEO
+) VALUES (3, 2, TO_DATE('01/01/2020', 'DD/MM/YYYY'), 10, 10, 10);
+-- 1 row(s) inserted.
+
+INSERT INTO MC_SGV_VISUALIZACAO_VIDEO (
+  NR_CLIENTE, CD_PRODUTO, DT_VISUALZACAO, NR_HORA_VISULIZACAO, NR_MINUTO_VIDEO, NR_SEGUNDO_VIDEO
+) VALUES (4, 2, TO_DATE('01/01/2020', 'DD/MM/YYYY'), 10, 10, 10);
+-- 1 row(s) inserted.
+
+INSERT INTO MC_SGV_VISUALIZACAO_VIDEO (
+  NR_CLIENTE, CD_PRODUTO, DT_VISUALZACAO, NR_HORA_VISULIZACAO, NR_MINUTO_VIDEO, NR_SEGUNDO_VIDEO
+) VALUES (5, 2, TO_DATE('01/01/2020', 'DD/MM/YYYY'), 10, 10, 10);
+-- 1 row(s) inserted.
+
+-- l) Confirme todas as transações pendentes (muito importante).
+
+COMMIT;
+-- Statement processed.
+
+-- m) Cadastre uma categoria de produto com status I(nativo).
+
+INSERT INTO MC_CATEGORIA_PROD (
+  TP_CATEGORIA, DS_CATEGORIA, ST_CATEGORIA
+) VALUES ('P', 'Farmácia', 'I');
+-- 1 row(s) inserted.
+
+-- n) Cadastre um produto com status I(nativo).
+
+INSERT INTO MC_PRODUTO (
+  CD_CATEGORIA, NR_CD_BARRAS_PROD, DS_PRODUTO, VL_UNITARIO, TP_EMBALAGEM, ST_PRODUTO, VL_PERC_LUCRO, DS_COMPLETA_PROD
+) VALUES (8, '7891234736802', 'Mario Kart', 340, 'UN', 'I', 40, 'Mario Kart de Nintendo DS');
+-- 1 row(s) inserted.
+
+-- o) Selecione um específico funcionário e atualize o Cargo e aplique 12% de aumento de salário.
+
+UPDATE MC_FUNCIONARIO
+SET 
+  VL_SALARIO = VL_SALARIO * 1.12,
+  DS_CARGO = 'DIRETORA'
+WHERE CD_FUNCIONARIO = 3;
+-- 1 row(s) updated.
+
+-- p) Atualize a descrição de uma categoria de produto a seu critério.
+
+UPDATE MC_CATEGORIA_PROD SET DS_CATEGORIA = 'Cama, Mesa e Banho' WHERE CD_CATEGORIA = 5;
+-- 1 row(s) updated.
+
+-- q) Atualize o nome de um departamento a sua escolha, utilizando como filtro o nome do departamento antes de ser atualizado.
+
+UPDATE MC_DEPTO SET NM_DEPTO = 'RH (RECURSOS HUMANOS)' WHERE NM_DEPTO = 'RECURSOS HUMANOS (RH)';
+-- 1 row(s) updated.
+
+-- r) Atualize a data de nascimento de um cliente pessoa física. Defina a nova data como sendo 18/05/2002.
+-- TO_DATE('18/05/2002', 'DD/MM/YYYY')
+
+UPDATE MC_CLI_FISICA SET DT_NASCIMENTO = TO_DATE('18/05/2002', 'DD/MM/YYYY') WHERE NR_CLIENTE = 4;
+-- 1 row(s) updated.
+
+-- s) Atualize a descrição de uma categoria de vídeo a seu critério.
+
+UPDATE MC_CATEGORIA_PROD SET DS_CATEGORIA = 'Análise comparativa' WHERE CD_CATEGORIA = 18;
+-- 1 row(s) updated.
+
+-- t) Desative um funcionário colocando o status como I(nativo) e também a data de desligamento como sendo a data de hoje (sysdate).
+
+UPDATE MC_FUNCIONARIO SET ST_FUNC = 'I', DT_DESLIGAMENTO = SYSDATE WHERE CD_FUNCIONARIO = 1;
+-- 1 row(s) updated.
+
+-- u) Cadastre um atendimento SAC na tabela MC_SGV_SAC. Após isso, utilize outro comando DML para atualizar a descrição detalhada de retorno do 
+--    SAC feito pelo funcionário. Insira um conteúdo significativo. Não se esqueça de atualizar também a data e hora de atendimento e também  
+--    acrescendo o número total de horas do atendimento SAC.
+
+-- remember
+CREATE TABLE MC_SGV_SAC (
+    NR_SAC NUMBER NOT NULL,
+    NR_CLIENTE NUMBER(10) NOT NULL,
+    CD_PRODUTO NUMBER(10) NOT NULL,
+    CD_FUNCIONARIO NUMBER(10),
+    DS_DETALHADA_SAC CLOB,
+    DT_ABERTURA_SAC DATE,
+    HR_ABERTURA_SAC NUMBER(2),
+    DT_ATENDIMENTO DATE,
+    HR_ATENDIMENTO_SAC NUMBER(2),
+    NR_TEMPO_TOTAL_SAC NUMBER(10),
+    DS_DETALHADA_RETORNO_SAC CLOB,
+    TP_SAC CHAR(1) NOT NULL,
+    ST_SAC CHAR(1),
+    NR_INDICE_SATISFACAO NUMBER(2)
+);
+
+ALTER TABLE MC_SGV_SAC
+ADD CONSTRAINT PK_MC_SGV_SAC PRIMARY KEY (NR_SAC);
+
+CREATE SEQUENCE SEQ_NR_SAC
+START WITH 1
+INCREMENT BY 1
+NOCACHE;
+
+ALTER TABLE MC_SGV_SAC
+MODIFY NR_SAC DEFAULT SEQ_NR_SAC.NEXTVAL;
+---
+
+INSERT INTO MC_SGV_SAC (
+  NR_CLIENTE, CD_PRODUTO, TP_SAC, DS_DETALHADA_SAC, DT_ABERTURA_SAC, HR_ABERTURA_SAC, ST_SAC
+) VALUES (2, 2, 'R', 'O produto não está funcionando corretamente.', SYSDATE, 0, 'A');
+-- 1 row(s) inserted.
+
+UPDATE MC_SGV_SAC 
+SET DS_DETALHADA_RETORNO_SAC = 
+  'O produto foi enviado para a assistência técnica e o cliente será informado sobre o andamento do processo.',
+  DT_ATENDIMENTO = SYSDATE,
+  HR_ATENDIMENTO_SAC = 10,
+  NR_TEMPO_TOTAL_SAC = 10
+WHERE NR_SAC = 1;
+-- 1 row(s) updated.
+
+-- v) Selecione um endereço de cliente e coloque o status como I(nativo) e preencha a data de término como sendo a data de ontem. 
+--    Utilize a função to_date para registrar esse novo valor da data.
+
+UPDATE MC_END_CLI SET ST_END = 'I', DT_TERMINO = TO_DATE(SYSDATE - 1, 'DD/MM/YYYY') WHERE NR_CLIENTE = 1;
+-- 1 row(s) updated.
+
+-- w) Selecione um endereço de funcionário e coloque o status como I(nativo) e preencha a data de término como sendo a data de ontem. 
+--    Utilize a função to_date para registrar esse novo valor da data.
+
+UPDATE MC_END_FUNC SET ST_END = 'I', DT_TERMINO = TO_DATE(SYSDATE - 1, 'DD/MM/YYYY') WHERE CD_FUNCIONARIO = 1;
+-- 1 row(s) updated.
+
+-- x) Tente eliminar um estado que tenha uma cidade Cadastrada. Isso foi possível? Justifique o motivo?
+
+DELETE FROM MC_ESTADO WHERE SG_ESTADO = 'MT';
+-- ORA-02292: integrity constraint (SQL_BPQWJUNDLNTATDBQPWZKJKDSH.FK_MC_CIDADE_ESTADO) violated - child record found ORA-06512: at "SYS.DBMS_SQL", line 1721
+
+-- Resposta: Não foi possível excluir o estado pois ele possui uma cidade cadastrada, logo tal deleção violaria a 'constraint' de chave estrangeira que faz 
+--           referência ao estado na tabela da cidade, corrompendo o banco de dados. Trata-se de uma restrição que mantém a integridade referencial entre duas 
+--           tabelas, garantindo que não haja registros órfãos na tabela filha. Quando uma tabela possui uma constraint de chave estrangeira, não é possível 
+--           excluir registros da tabela pai que tenham registros associados na tabela filha. Para excluir o estado, é necessário excluir a cidade primeiro.
+
+-- y) Selecione um produto e tente atualizar o status do produto com o status X. Isso foi possível? Justifique o motivo?
+
+UPDATE MC_PRODUTO SET ST_PRODUTO = 'X' WHERE CD_PRODUTO = 1;
+-- 1 row(s) updated.
+
+-- Resposta: Sim, pois não fora especificado pelo enunciado a adição das 'contraints' de check da entrega anterior, não estando contido nesta proposta mais
+--           flexível do modelo físico apresendado.
+
+-- z) Confirme todas as transações pendentes.
+
+COMMIT;
+-- Statement processed.
+
