@@ -232,7 +232,6 @@ VALUES (7, SEQ_CD_FUNCIONARIO.CURRVAL-2, 'Wagner Almeida', 'Assistente de Logís
 -- 1 row(s) inserted.
 
 
-
 -- Resposta do Comando SQL item c)
 
 INSERT ALL
@@ -301,6 +300,12 @@ INSERT INTO MC_CIDADE (NM_CIDADE, SG_ESTADO) VALUES ('OLINDA', 'PE');
 INSERT INTO MC_CIDADE (NM_CIDADE, SG_ESTADO) VALUES ('SÃO PAULO', 'SP');
 -- 1 row(s) inserted.
 
+INSERT INTO MC_CIDADE (NM_CIDADE, SG_ESTADO) VALUES ('Niterói', 'RJ');
+INSERT INTO MC_CIDADE (NM_CIDADE, SG_ESTADO) VALUES ('Rio de Janeiro', 'RJ');
+INSERT INTO MC_CIDADE (NM_CIDADE, SG_ESTADO) VALUES ('Blumenau', 'SC');
+INSERT INTO MC_CIDADE (NM_CIDADE, SG_ESTADO) VALUES ('Florianópolis', 'SC');
+INSERT INTO MC_CIDADE (NM_CIDADE, SG_ESTADO) VALUES ('Campinas', 'SP');
+
 --------------------------------------------------------------
 
 INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('CENTRO POLÍTICO ADMINISTRATIVO (CPA)', 1);
@@ -335,6 +340,19 @@ INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('AMPARO', 10);
 
 INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('VILA PRUDENTE', 11);
 -- 1 row(s) inserted.
+
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Moema', 11);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Vila Madalena', 11);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Icaraí', 12);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('São Francisco', 12);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Botafogo', 13);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Copacabana', 13);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Centro', 14);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Itoupava Seca', 14);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Centro', 15);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Trindade', 15);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Barão Geraldo', 16);
+INSERT INTO MC_BAIRRO (NM_BAIRRO, CD_CIDADE) VALUES ('Cambuí', 16);
 
 --------------------------------------------------------------
 
@@ -420,6 +438,83 @@ INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (10, 'R. Cel
 
 -- R. Dr. Sanareli, 310 - Vila Prudente, São Paulo - SP, 03137-100 21
 INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (11, 'R. Dr. Sanareli', 03137100);
+-- 1 row(s) inserted.
+
+-- 349 22 
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (12, 'Avenida Moema - até 349/350', 04077020);
+-- 1 row(s) inserted.
+
+-- Av. Chibarás, 44 - Moema, São Paulo - SP, 04076-000 23
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (12, 'Avenida Ibirapuera', 04076000);
+-- 1 row(s) inserted.
+
+-- R. dos Tamanás, 610 - Vila Madalena, São Paulo - SP, 05444-010 24
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (13, 'Rua dos Tamanás', 05444010);
+-- 1 row(s) inserted.
+
+-- R. Purpurina, 34 - Vila Madalena, São Paulo - SP, 05435-030 25
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (13, 'Rua Harmonia', 05435030);
+-- 1 row(s) inserted.
+
+-- 284 26
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (14, 'Praia Botafogo - até 284 - lado par', 22250040);
+-- 1 row(s) inserted.
+
+-- 154 27
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (14, 'Rua Voluntários da Pátria - até 154', 22270010);
+-- 1 row(s) inserted.
+
+-- 10 28
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (15, 'Rua Siqueira Campos - de 1 ao fim', 22031071);
+-- 1 row(s) inserted.
+
+-- Av. Nossa Sra. de Copacabana, 659 - Copacabana, Rio de Janeiro - RJ, 22050-000 29
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (15, 'Avenida Nossa Senhora de Copacabana', 22050000);
+-- 1 row(s) inserted.
+
+-- R. XV de Novembro, 160 - Centro, Blumenau - SC, 89010-001 30
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (16, 'Rua Horácio Antônio Braun', 89010001);
+-- 1 row(s) inserted.
+
+-- 913 31
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (16, 'Rua 15 de Novembro - até 913 - lado ímpar', 89010001);
+-- 1 row(s) inserted.
+
+-- 653 32
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (17, 'Rua Francisco Vahldieck - até 653/654', 89053188);
+-- 1 row(s) inserted.
+
+-- R. Iguaçu, 160 - Itoupava Seca, Blumenau - SC, 89030-030 33
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (17, 'Rua Iguaçu', 89030030);
+-- 1 row(s) inserted.
+
+-- R. Felipe Schmidt, 162 - Centro, Florianópolis - SC, 88010-000 34
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (18, 'Rua Deodoro', 88010000);
+-- 1 row(s) inserted.
+
+-- 348 35
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (18, 'Rua Felipe Schmidt - até 348/349', 88010000);
+-- 1 row(s) inserted.
+
+-- R. Lauro Linhares, 2055 - Trindade, Florianópolis - SC, 88036-003 36
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (19, 'Rua Lauro Linhares', 88036003);
+-- 1 row(s) inserted.
+
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (19, 'Rua Laércio Costa', 88036310);
+-- 1 row(s) inserted.
+
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (20, 'Avenida Santa Isabel', 13083852);
+-- 1 row(s) inserted.
+
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (20, 'Estrada Municipal Weimar Morandi', 13085850);
+-- 1 row(s) inserted.
+
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (21, 'Rua Coronel Quirino', 13025004);
+-- 1 row(s) inserted.
+
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES (21, 'Rua Conceição', 13025355);
+-- 1 row(s) inserted.
+
 
 -- Resposta do Comando SQL item d)
 
@@ -430,18 +525,106 @@ INSERT INTO MC_END_FUNC (
 
 INSERT INTO MC_END_FUNC (
   CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
-) VALUES (2, 3, 3035, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+) VALUES (2, 2, 389, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
 -- 1 row(s) inserted.
 
 INSERT INTO MC_END_FUNC (
   CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
-) VALUES (3, 5, 4330, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+) VALUES (3, 3, 3035, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
 -- 1 row(s) inserted.
 
--- e) Cadastre no mínimo 10 CLIENTES PESSOAS FÍSICAS e 5 CLIENTES PESSOA JÚRIDICA e associe no mínimo 1 endereço 
---    para cada cliente. Utilize nomes significativos e relevantes.
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (4, 4, 11, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
 
--- insert into MC_CLIENTE 10 persons
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (5, 5, 4330, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (6, 6, 500, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (7, 7, 1326, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (8, 8, 86, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (9, 9, 5, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (10, 10, 22, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (11, 11, 1559, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (12, 12, 644, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (13, 13, 1204, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (14, 14, 306, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (15, 15, 874, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (16, 16, 20, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (17, 17, 170, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (18, 18, 3984, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (19, 19, 212, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (20, 20, 530, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+INSERT INTO MC_END_FUNC (
+  CD_FUNCIONARIO, CD_LOGRADOURO, NR_END, DT_INICIO, ST_END
+) VALUES (21, 21, 310, TO_DATE('01/01/2019', 'DD/MM/YYYY'), 'A');
+-- 1 row(s) inserted.
+
+
+-- Resposta do Comando SQL item e)
 
 INSERT INTO MC_CLIENTE (
   NM_CLIENTE, ST_CLIENTE, DS_EMAIL, NR_TELEFONE, NM_LOGIN, DS_SENHA
@@ -460,7 +643,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 2, 389
+SELECT NR_CLIENTE, 22, 349
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'João Figueira da Silva'
 FETCH FIRST 1 ROWS ONLY;
@@ -483,7 +666,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 4, 11
+SELECT NR_CLIENTE, 23, 44
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Maria Clementina da Silva'
 FETCH FIRST 1 ROWS ONLY;
@@ -506,7 +689,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 6, 500
+SELECT NR_CLIENTE, 24, 610
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'José Alberto Gonçalves'
 FETCH FIRST 1 ROWS ONLY;
@@ -529,7 +712,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 7, 1326
+SELECT NR_CLIENTE, 25, 34
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Joana di Paola'
 FETCH FIRST 1 ROWS ONLY;
@@ -552,7 +735,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 8, 86
+SELECT NR_CLIENTE, 26, 284
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Marcos Guimarães'
 FETCH FIRST 1 ROWS ONLY;
@@ -575,7 +758,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 9, 5 
+SELECT NR_CLIENTE, 27, 154 
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Marcia da Silva'
 FETCH FIRST 1 ROWS ONLY;
@@ -598,7 +781,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 10, 22
+SELECT NR_CLIENTE, 28, 10
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'João Manolo Oliveira'
 FETCH FIRST 1 ROWS ONLY;
@@ -621,7 +804,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 11, 1559
+SELECT NR_CLIENTE, 29, 659
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Jessica Camargo'
 FETCH FIRST 1 ROWS ONLY;
@@ -644,7 +827,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 12, 644
+SELECT NR_CLIENTE, 30, 160
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'José Pedro de Camargo'
 FETCH FIRST 1 ROWS ONLY;
@@ -667,7 +850,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 13, 1204
+SELECT NR_CLIENTE, 31, 913
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Joana Figueira'
 FETCH FIRST 1 ROWS ONLY;
@@ -691,7 +874,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 14, 306
+SELECT NR_CLIENTE, 32, 653
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Boring Company'
 FETCH FIRST 1 ROWS ONLY;
@@ -714,7 +897,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 15, 874
+SELECT NR_CLIENTE, 33, 160
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Delirium Bar'
 FETCH FIRST 1 ROWS ONLY;
@@ -737,7 +920,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 16, 20
+SELECT NR_CLIENTE, 34, 162
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Hot Wheels'
 FETCH FIRST 1 ROWS ONLY;
@@ -760,7 +943,7 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 17, 170
+SELECT NR_CLIENTE, 35, 348
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Jequiti'
 FETCH FIRST 1 ROWS ONLY;
@@ -783,14 +966,17 @@ FETCH FIRST 1 ROWS ONLY;
 INSERT INTO MC_END_CLI (
   NR_CLIENTE, CD_LOGRADOURO_CLI, NR_END
 )
-SELECT NR_CLIENTE, 18, 3984
+SELECT NR_CLIENTE, 36, 2055
 FROM MC_CLIENTE 
 WHERE NM_CLIENTE = 'Nasa'
 FETCH FIRST 1 ROWS ONLY;
 -- 1 row(s) inserted.
 
+
 -- f) Cadastre um novo cliente que já tenha um mesmo login já criado. (*Exiba a instrução SQL executada para realizar a tarefa e apresente o 
 --    resultado dessa execução). Foi possível incluir esse novo cliente? Explique?
+
+-- Resposta do Comando SQL item f)
 
 INSERT INTO MC_CLIENTE (
   NM_CLIENTE, ST_CLIENTE, DS_EMAIL, NR_TELEFONE, NM_LOGIN, DS_SENHA
@@ -800,6 +986,7 @@ INSERT INTO MC_CLIENTE (
 -- Resposta: Sim, foi possível incluir o novo cliente, pois a coluna NM_CLIENTE é única, ou seja, não pode haver dois clientes com o mesmo nome, porém, 
 --           para a coluna NM_LOGIN não foi específicado, pelo modelo físico apresentado no enunciado, como portadora de constraint do tipo UNIQUE, 
 --           deixando assim esta falha no sistema.
+
 
 -- g) Cadastre as seguintes categorias para os produtos: 
 --    Artesanato
@@ -815,6 +1002,8 @@ INSERT INTO MC_CLIENTE (
 --    Pet Shop
 --    TV
 --    Utilidades Domésticas.
+
+-- Resposta do Comando SQL item g)
 
 INSERT INTO MC_CATEGORIA_PROD (
   TP_CATEGORIA, DS_CATEGORIA, ST_CATEGORIA
@@ -881,11 +1070,14 @@ INSERT INTO MC_CATEGORIA_PROD (
 ) VALUES ('P', 'Utilidades Domésticas', 'A');
 -- 1 row(s) inserted.
 
+
 -- h) Cadastre as seguintes categorias para os vídeos: 
 --    Instalação do produto
 --    Uso no cotidiano
 --    Comercial com personalidade
 --    entre outros.
+
+-- Resposta do Comando SQL item h)
 
 INSERT INTO MC_CATEGORIA_PROD (
   TP_CATEGORIA, DS_CATEGORIA, ST_CATEGORIA
@@ -912,7 +1104,10 @@ INSERT INTO MC_CATEGORIA_PROD (
 ) VALUES ('V', 'Review - Análise comparativa', 'A');
 -- 1 row(s) inserted.
 
+
 -- i) Cadastre 20 produtos e associe as categorias adequadas ao produto.
+
+-- Resposta do Comando SQL item i)
 
 INSERT INTO MC_PRODUTO (
   CD_CATEGORIA, NR_CD_BARRAS_PROD, DS_PRODUTO, VL_UNITARIO, TP_EMBALAGEM, ST_PRODUTO, VL_PERC_LUCRO, DS_COMPLETA_PROD
@@ -1014,8 +1209,11 @@ INSERT INTO MC_PRODUTO (
 ) VALUES (7, '7891234567809', 'Serra circular de bancada', 950, 'UN', 'A', 50, 'Serra circular de bancada');
 -- 1 row(s) inserted.
 
+
 -- j) Cadastre 2 vídeos de produtos na tabela MC_SGV_PRODUTO_VIDEO e associe esses 2 vídeos em um único produto já cadastrado. 
 --    Associe também as categorias adequadas ao vídeo.
+
+-- Resposta do Comando SQL item j)
 
 INSERT INTO MC_SGV_PRODUTO_VIDEO (
   CD_PRODUTO, CD_CATEGORIA, TP_VIDEO_PROD, DS_PATH_VIDEO_PROD, ST_VIDEO_PROD
@@ -1027,7 +1225,16 @@ INSERT INTO MC_SGV_PRODUTO_VIDEO (
 ) VALUES (2, 15, 'MP4', 'C:\videos\video2.mp4', 'A');
 -- 1 row(s) inserted.
 
+
 -- k) Por fim, cadastre 5 visualizações de vídeos de produtos na tabela MC_SGV_VISUALIZACAO_VIDEO e associe a um cliente a seu critério.
+
+-- Resposta do Comando SQL item k)
+
+-- CREATE SEQUENCE SQ_MC_SGV_VISUALIZACAO_VIDEO
+-- INCREMENT BY 1 
+-- MAXVALUE 9999999999 
+-- NOCACHE 
+-- NOCYCLE;
 
 INSERT INTO MC_SGV_VISUALIZACAO_VIDEO (
   NR_CLIENTE, CD_PRODUTO, DT_VISUALZACAO, NR_HORA_VISULIZACAO, NR_MINUTO_VIDEO, NR_SEGUNDO_VIDEO
@@ -1054,26 +1261,38 @@ INSERT INTO MC_SGV_VISUALIZACAO_VIDEO (
 ) VALUES (5, 2, TO_DATE('01/01/2020', 'DD/MM/YYYY'), 10, 10, 10);
 -- 1 row(s) inserted.
 
+
 -- l) Confirme todas as transações pendentes (muito importante).
+
+-- Resposta do Comando SQL item l) 
 
 COMMIT;
 -- Statement processed.
 
+
 -- m) Cadastre uma categoria de produto com status I(nativo).
+
+-- Resposta do Comando SQL item m)
 
 INSERT INTO MC_CATEGORIA_PROD (
   TP_CATEGORIA, DS_CATEGORIA, ST_CATEGORIA
 ) VALUES ('P', 'Farmácia', 'I');
 -- 1 row(s) inserted.
 
+
 -- n) Cadastre um produto com status I(nativo).
+
+-- Resposta do Comando SQL item n) 
 
 INSERT INTO MC_PRODUTO (
   CD_CATEGORIA, NR_CD_BARRAS_PROD, DS_PRODUTO, VL_UNITARIO, TP_EMBALAGEM, ST_PRODUTO, VL_PERC_LUCRO, DS_COMPLETA_PROD
 ) VALUES (8, '7891234736802', 'Mario Kart', 340, 'UN', 'I', 40, 'Mario Kart de Nintendo DS');
 -- 1 row(s) inserted.
 
+
 -- o) Selecione um específico funcionário e atualize o Cargo e aplique 12% de aumento de salário.
+
+-- Resposta do Comando SQL item o)
 
 UPDATE MC_FUNCIONARIO
 SET 
@@ -1082,35 +1301,53 @@ SET
 WHERE CD_FUNCIONARIO = 3;
 -- 1 row(s) updated.
 
+
 -- p) Atualize a descrição de uma categoria de produto a seu critério.
+
+-- Resposta do Comando SQL item p)
 
 UPDATE MC_CATEGORIA_PROD SET DS_CATEGORIA = 'Cama, Mesa e Banho' WHERE CD_CATEGORIA = 5;
 -- 1 row(s) updated.
 
+
 -- q) Atualize o nome de um departamento a sua escolha, utilizando como filtro o nome do departamento antes de ser atualizado.
+
+-- Resposta do Comando SQL item q)
 
 UPDATE MC_DEPTO SET NM_DEPTO = 'RH (RECURSOS HUMANOS)' WHERE NM_DEPTO = 'RECURSOS HUMANOS (RH)';
 -- 1 row(s) updated.
 
+
 -- r) Atualize a data de nascimento de um cliente pessoa física. Defina a nova data como sendo 18/05/2002.
 -- TO_DATE('18/05/2002', 'DD/MM/YYYY')
+
+-- Resposta do Comando SQL item r)
 
 UPDATE MC_CLI_FISICA SET DT_NASCIMENTO = TO_DATE('18/05/2002', 'DD/MM/YYYY') WHERE NR_CLIENTE = 4;
 -- 1 row(s) updated.
 
+
 -- s) Atualize a descrição de uma categoria de vídeo a seu critério.
+
+-- Resposta do Comando SQL item s)
 
 UPDATE MC_CATEGORIA_PROD SET DS_CATEGORIA = 'Análise comparativa' WHERE CD_CATEGORIA = 18;
 -- 1 row(s) updated.
 
+
 -- t) Desative um funcionário colocando o status como I(nativo) e também a data de desligamento como sendo a data de hoje (sysdate).
+
+-- Resposta do Comando SQL item t)
 
 UPDATE MC_FUNCIONARIO SET ST_FUNC = 'I', DT_DESLIGAMENTO = SYSDATE WHERE CD_FUNCIONARIO = 1;
 -- 1 row(s) updated.
 
+
 -- u) Cadastre um atendimento SAC na tabela MC_SGV_SAC. Após isso, utilize outro comando DML para atualizar a descrição detalhada de retorno do 
 --    SAC feito pelo funcionário. Insira um conteúdo significativo. Não se esqueça de atualizar também a data e hora de atendimento e também  
 --    acrescendo o número total de horas do atendimento SAC.
+
+-- Resposta do Comando SQL item u)
 
 INSERT INTO MC_SGV_SAC (
   NR_CLIENTE, CD_PRODUTO, TP_SAC, DS_DETALHADA_SAC, DT_ABERTURA_SAC, HR_ABERTURA_SAC, ST_SAC
@@ -1126,19 +1363,28 @@ SET DS_DETALHADA_RETORNO_SAC =
 WHERE NR_SAC = 1;
 -- 1 row(s) updated.
 
+
 -- v) Selecione um endereço de cliente e coloque o status como I(nativo) e preencha a data de término como sendo a data de ontem. 
 --    Utilize a função to_date para registrar esse novo valor da data.
+
+-- Resposta do Comando SQL item v)
 
 UPDATE MC_END_CLI SET ST_END = 'I', DT_TERMINO = TO_DATE(SYSDATE - 1, 'DD/MM/YYYY') WHERE NR_CLIENTE = 1;
 -- 1 row(s) updated.
 
+
 -- w) Selecione um endereço de funcionário e coloque o status como I(nativo) e preencha a data de término como sendo a data de ontem. 
 --    Utilize a função to_date para registrar esse novo valor da data.
+
+-- Resposta do Comando SQL item w)
 
 UPDATE MC_END_FUNC SET ST_END = 'I', DT_TERMINO = TO_DATE(SYSDATE - 1, 'DD/MM/YYYY') WHERE CD_FUNCIONARIO = 1;
 -- 1 row(s) updated.
 
+
 -- x) Tente eliminar um estado que tenha uma cidade Cadastrada. Isso foi possível? Justifique o motivo?
+
+-- Resposta do Comando SQL item x)
 
 DELETE FROM MC_ESTADO WHERE SG_ESTADO = 'MT';
 -- ORA-02292: integrity constraint (SQL_BPQWJUNDLNTATDBQPWZKJKDSH.FK_MC_CIDADE_ESTADO) violated - child record found ORA-06512: at "SYS.DBMS_SQL", line 1721
@@ -1148,7 +1394,10 @@ DELETE FROM MC_ESTADO WHERE SG_ESTADO = 'MT';
 --           tabelas, garantindo que não haja registros órfãos na tabela filha. Quando uma tabela possui uma constraint de chave estrangeira, não é possível 
 --           excluir registros da tabela pai que tenham registros associados na tabela filha. Para excluir o estado, é necessário excluir a cidade primeiro.
 
+
 -- y) Selecione um produto e tente atualizar o status do produto com o status X. Isso foi possível? Justifique o motivo?
+
+-- Resposta do Comando SQL item y)
 
 UPDATE MC_PRODUTO SET ST_PRODUTO = 'X' WHERE CD_PRODUTO = 1;
 -- 1 row(s) updated.
@@ -1156,7 +1405,10 @@ UPDATE MC_PRODUTO SET ST_PRODUTO = 'X' WHERE CD_PRODUTO = 1;
 -- Resposta: Sim, pois não fora especificado pelo enunciado a adição das 'contraints' de check da entrega anterior, não estando contido nesta proposta mais
 --           flexível do modelo físico apresendado.
 
+
 -- z) Confirme todas as transações pendentes.
+
+-- Resposta do Comando SQL item z) 
 
 COMMIT;
 -- Statement processed.
