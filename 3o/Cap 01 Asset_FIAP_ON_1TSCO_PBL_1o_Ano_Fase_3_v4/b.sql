@@ -1,5 +1,5 @@
 DECLARE
-    CURSOR one_dot_three_cursor IS
+    CURSOR populate_sac_cursor IS
         SELECT 
             sac.nr_sac, -- Número da ocorrência do SAC
             sac.dt_abertura_sac, -- Data de abertura do SAC
@@ -29,7 +29,7 @@ DECLARE
     v_vl_icms_produto NUMBER;
 
 BEGIN
-    FOR a_line IN one_dot_three_cursor LOOP
+    FOR a_line IN populate_sac_cursor LOOP
         -- Transform TP_SAC into DS_TIPO_CLASSIFICACAO_SAC
         CASE a_line.tp_sac
             WHEN 'S' THEN
