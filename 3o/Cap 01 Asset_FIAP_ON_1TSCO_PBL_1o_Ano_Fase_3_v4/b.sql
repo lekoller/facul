@@ -75,6 +75,7 @@ BEGIN
 
         -- Calculate VL_ICMS_PRODUTO
         pf0110.fun_mc_gera_aliquota_media_icms_estado(v_sg_estado, v_vl_icms_produto);
+        -- system.fun_mc_gera_aliquota_media_icms_estado(v_sg_estado, v_vl_icms_produto);
 
         v_vl_icms_produto := (v_vl_icms_produto / 100) * a_line.vl_unitario;
 
