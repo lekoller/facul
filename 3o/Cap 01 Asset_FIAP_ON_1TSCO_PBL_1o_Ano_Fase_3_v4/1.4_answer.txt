@@ -1,0 +1,23 @@
+a) O papel da TI em relação à LGPD dentro da plataforma de e-commerce e no dia a dia de uso operacional dentro da organização é crucial. A TI é responsável por garantir a segurança dos dados pessoais dos clientes, implementar as medidas técnicas e organizacionais necessárias para proteger esses dados e assegurar que todas as atividades realizadas na plataforma estejam em conformidade com a legislação de proteção de dados.
+
+No dia a dia de uso operacional, a TI deve implementar controles de acesso adequados, criptografar os dados pessoais em trânsito e em repouso, realizar backups e manter sistemas atualizados com patches de segurança. Além disso, a TI deve monitorar continuamente a segurança da plataforma, detectar e responder a incidentes de segurança, e garantir a integridade e disponibilidade dos dados.
+
+b) Recomendações de proteção aos dados:
+
+Implementação de medidas de segurança: A Melhores Compras deve adotar medidas técnicas e organizacionais para garantir a segurança dos dados dos clientes. Isso inclui a utilização de firewalls, sistemas de detecção de intrusão, criptografia de dados, autenticação multifator e a realização de testes de segurança regulares.
+
+Treinamento e conscientização: É essencial treinar todos os funcionários da Melhores Compras sobre as práticas adequadas de proteção de dados e conscientizá-los sobre a importância da LGPD. Os funcionários devem ser educados sobre os direitos dos titulares dos dados, os procedimentos internos de proteção de dados e as consequências de violações de privacidade.
+
+c) Exemplo de 5 dados anonimizados para os clientes:
+
+ID do cliente: Em vez de usar o nome completo do cliente, um ID único pode ser atribuído para identificá-lo internamente na empresa. Dessa forma, o dado pessoal é anonimizado e pode ser usado para análises estatísticas e relatórios sem expor a identidade do cliente.
+
+Histórico de compras: O histórico de compras do cliente pode ser anonimizado removendo-se informações pessoais, como nome e endereço. Os dados restantes podem ser usados para análise de tendências de consumo e personalização de ofertas.
+
+Preferências de produto: As preferências de produto do cliente podem ser anonimizadas e utilizadas para oferecer recomendações personalizadas, sem a necessidade de expor dados pessoais sensíveis.
+
+Dados demográficos: Dados demográficos como idade, gênero e localização podem ser anonimizados e agregados para realizar análises de mercado e segmentação de clientes, sem identificar indivíduos específicos.
+
+Avaliações e feedback: As avaliações e feedback dos clientes podem ser anonimizados, removendo informações que possam revelar a identidade do cliente. Esses dados podem ser utilizados para melhorar a qualidade dos produtos e serviços oferecidos pela Melhores Compras.
+
+Dentro da empresa Melhores Compras, esses dados anonimizados podem ser usados para análise de mercado, segmentação de clientes, personalização de ofertas e melhoria dos produtos e serviços. Fora da empresa, os dados anonimizados podem ser utilizados para pesquisas de mercado e estudos estatísticos, desde que não haja possibilidade de reidentificação dos indivíduos.
