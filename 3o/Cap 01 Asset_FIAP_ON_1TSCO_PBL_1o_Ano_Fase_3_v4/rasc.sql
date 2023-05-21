@@ -133,6 +133,7 @@ COMMIT;
 END LOOP;
 END;
 /
+
 CREATE OR REPLACE PROCEDURE fun_mc_gera_aliquota_media_icms_estado(p_sg_estado IN VARCHAR2, p_aliquota OUT NUMBER) IS BEGIN IF p_sg_estado = 'AC' THEN p_aliquota := 17.0;
 ELSIF p_sg_estado = 'AL' THEN p_aliquota := 18.0;
 ELSIF p_sg_estado = 'AM' THEN p_aliquota := 18.0;
